@@ -1,0 +1,135 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  transition: 0.3s ease;
+}
+
+.light {
+  background-color: #f1f5f9;
+  color: #000000;
+}
+
+.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.counter-card {
+  width: 100%;
+  max-width: 450px;
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+.light .counter-card {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark .counter-card {
+  background-color: #242424;
+  color: #ffffff;
+}
+
+.counter-card h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-bottom: 30px;
+  opacity: 0.75;
+}
+
+.counter-display {
+  font-size: 65px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.counter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.increment {
+  background-color: #16a34a;
+  color: white;
+}
+
+.decrement {
+  background-color: #dc2626;
+  color: white;
+}
+
+.reset {
+  background-color: #64748b;
+  color: white;
+}
+
+.theme-section {
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid #999999;
+}
+
+.theme-section h3 {
+  font-size: 17px;
+  margin-bottom: 18px;
+}
+
+.theme-button {
+  background-color: #2563eb;
+  color: white;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .counter-card {
+    padding: 30px 18px;
+  }
+
+  .counter-card h1 {
+    font-size: 23px;
+  }
+
+  .counter-display {
+    font-size: 55px;
+  }
+
+  .counter-buttons button {
+    flex: 1;
+    min-width: 90px;
+  }
+}
