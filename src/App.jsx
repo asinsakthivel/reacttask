@@ -3,8 +3,8 @@ import React, { useState } from "react";
 //import Login from "./components/Login";
 //import Home from "./components/Home";
 //import  "./App.css";
-
-import Counter from "./components/Counter";
+//import Counter from "./components/Counter";
+import Registration from "./components/Registration";
 /*function App() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -27,6 +27,7 @@ import Counter from "./components/Counter";
     );
 }
 */function App() {
-  return <Counter />;
+  //return <Counter />;
+  return <Registration />;
 }
 export default App;
