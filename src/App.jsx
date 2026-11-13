@@ -4,7 +4,8 @@ import React, { useState } from "react";
 //import Home from "./components/Home";
 //import  "./App.css";
 //import Counter from "./components/Counter";
-import Registration from "./components/Registration";
+//import Registration from "./components/Registration";
+import XOGame from "./components/XOGame";
 /*function App() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -28,6 +29,7 @@ import Registration from "./components/Registration";
 }
 */function App() {
   //return <Counter />;
-  return <Registration />;
+  // return <Registration />;
+    return <XOGame />;
 }
 export default App;
